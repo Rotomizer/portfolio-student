@@ -84,7 +84,6 @@ nav {
 
 /*home-content*/
 .home-content {
-    border: var(--debug-border);
     hr {
         margin: 5% 1%;
         color: darkgrey;
@@ -95,7 +94,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1%;
+    padding: 5% 4%;
     .container {
         padding: 1%;
         h2 {
@@ -120,7 +119,7 @@ nav {
 
 .portfolio-text {
     display: block;
-    padding: 1%;
+    padding: 3% 3% 10% 3%;
     h2 {
         text-align: center;
         font-size: 60px;
@@ -135,7 +134,7 @@ nav {
         padding: 2% 0;
         .box {
             width: auto;
-            height: 250px;
+            height: 350px;
             margin: 10px;
             flex-shrink: 1;
             flex-grow: 1;
@@ -146,6 +145,7 @@ nav {
             border-radius: 15px;
             background: url("https://placehold.co/1000x1000") center;
             background-repeat: no-repeat;
+            box-shadow: 3px 4px 8px 1px rgba(0,0,0,0.1);
             p {
                 margin: 0;
                 padding: 5px;
@@ -157,11 +157,51 @@ nav {
     }
 }
 
+.contact-text {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url("https://placehold.co/2000x2000") center;
+    padding: 10% 10%;
+    h2 {
+        background: transparent;
+        text-align: center;
+        font-size: 60px;
+    }
+    p {
+        background: transparent;
+        text-align: center;
+    }
+    .contact-container {
+        width: 40%;
+        display: flex;
+        padding: 4px 4%;
+        justify-content: center;
+        background: transparent;
+        .contact-button {
+            width: 200px;
+            height: 4vh;
+            display: flex;
+            margin: 2%;
+            background-color: lightblue;
+            border: 3px solid rgb(85, 210, 214);
+            border-radius: 20px;
+            p {
+                width: 100%;
+                height: auto;
+                margin: auto;
+                background: transparent;
+            }
+        }
+    }
+}
+
 /* footer */
 .footer {
     margin: 10px 0 0 0;
     text-align: center;
-    border: var(--debug-border);
 }
 
 .footer-text {
