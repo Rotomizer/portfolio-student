@@ -1,1 +1,1 @@
-# portfolio-student
+# This is a template for student-portfolio websites
