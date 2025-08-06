@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+    background-color: #fff;
+}
+
+@theme {
+    
+}
+
+@layer components {
+    .debug1 {
+        @apply border border-red-500;
+    }
+
+    .debug2 {
+        @apply border border-green-500;
+    }
+
+    .debug3 {
+        @apply border border-blue-500;
+    }
+
+    .email-button {
+        @apply bg-green-500 p-4 rounded-2xl;
+    }
+}
