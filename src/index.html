@@ -50,9 +50,9 @@
             </div>
             <div class="flex items-center space-x-8 px-6 text-xl">
                 <ul class="flex items-center space-x-12" id="navbar">
-                    <a href="#" class="p-4" id="navli"><li>Home</li></a>
-                    <a href="about/about.html" class="p-4" id="navli"><li>About Me</li></a>
-                    <a href="portfolio/portfolio.html" class="p-4" id="navli"><li>Projects</li></a>
+                    <a href="#" class="" id="navli"><li>Home</li></a>
+                    <a href="about/about.html" class="" id="navli"><li>About Me</li></a>
+                    <a href="portfolio/portfolio.html" class="" id="navli"><li>Projects</li></a>
                     <a href="mailto:business@name.com" target="_blank" class="email-button" id="nav-button">Email Me</a>
                 </ul>
                 <button class="h-12 w-12 p-1 flex justify-center items-center bg-slate-100 rounded-full" id="theme-switch2">
@@ -73,17 +73,29 @@
     <!-- Main Body -->
     <section class="debug1">
         <div class="debug2 mx-20 p-10 text-center">
-            <h2 class="text-4xl p-10">Previous Work</h2>
+            <h2 class="debug1 w-1/2 text-4xl m-auto p-10">Previous Work</h2>
             <h3 class=" debug3 w-3/4 text-xl px-20 m-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, hic.</h3>
-            <div class="debug1">
-                <div class="container-box">
-                    <a href="projects/projectA.html" class="box">
-                        <h3>Project 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero modi non rerum provident veniam sit?</p>
-                    </a>
-                </div>
-                <!-- copy & paste project sections based on the div class="container-box" level, "no-box" indicates that it will be hidden at the start and will only be revealed when "Show More" is clicked -->
+            <div class="debug3 grid grid-cols-3 grid-rows-4 gap-5 p-15">
+                <a href="#" class="overflow-hidden bg-slate-400 h-100 rounded-2xl drop-shadow-xl group">
+                    <div class="fixed bg-white/30 h-1/2 w-full"></div>
+                    <div class="bg-[url(/Images/D_BW.jpg)] bg-cover bg-center h-full max-w-full mx-auto rounded-2xl group-hover:h-65 group-hover:max-w-9/10 group-hover:aspect-video group-hover:mx-auto group-hover:mt-5 transition-all duration-500 ease-in-out">
+                        
+                    </div>
+                    <h3 class="opacity-0 p-2 text-3xl group-hover:opacity-100 transition duration-500 ease-in-out">Project 1</h3>
+                    <p class="opacity-0 px-3 group-hover:opacity-100 transition duration-500 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero modi non rerum provident veniam sit?</p>
+                </a>
+                <a href="#" class="overflow-hidden bg-slate-400 h-100 rounded-2xl drop-shadow-xl group">
+                    <div class="bg-[url(/Images/D_BW.jpg)] bg-cover bg-center h-full max-w-full mx-auto rounded-2xl group-hover:h-65 group-hover:max-w-9/10 group-hover:aspect-video group-hover:mx-auto group-hover:mt-5 transition-all duration-500 ease-in-out"></div>
+                    <h3 class="opacity-0 p-2 text-3xl group-hover:opacity-100 transition duration-500 ease-in-out">Project 1</h3>
+                    <p class="opacity-0 px-3 group-hover:opacity-100 transition duration-500 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero modi non rerum provident veniam sit?</p>
+                </a>
+                <a href="#" class="overflow-hidden bg-slate-400 h-100 rounded-2xl drop-shadow-xl group">
+                    <div class="bg-[url(/Images/D_BW.jpg)] bg-cover bg-center h-full max-w-full mx-auto rounded-2xl group-hover:h-65 group-hover:max-w-9/10 group-hover:aspect-video group-hover:mx-auto group-hover:mt-5 transition-all duration-500 ease-in-out"></div>
+                    <h3 class="opacity-0 p-2 text-3xl group-hover:opacity-100 transition duration-500 ease-in-out">Project 1</h3>
+                    <p class="opacity-0 px-3 group-hover:opacity-100 transition duration-500 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero modi non rerum provident veniam sit?</p>
+                </a>
             </div>
+            <!-- copy & paste project sections based on the div class="container-box" level, "no-box" indicates that it will be hidden at the start and will only be revealed when "Show More" is clicked -->
             <button onclick="showMoreButton()" id="showButton">Show More</button>
             <a href="#top"><button onclick="showLessButton()" id="lessButton" class="no-box">Show Less</button></a>
         </div>
