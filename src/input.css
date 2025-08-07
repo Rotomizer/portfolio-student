@@ -24,6 +24,10 @@ body {
     }
 
     .email-button {
-        @apply bg-green-500 p-4 rounded-2xl drop-shadow-md;
+        @apply bg-green-500 p-4 rounded-2xl drop-shadow-md cursor-pointer text-2xl text-white;
+    }
+
+    .green-button {
+        @apply bg-green-500 w-full mx-auto my-10 py-3 rounded-full drop-shadow-lg cursor-pointer text-2xl text-white;
     }
 }
