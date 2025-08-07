@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:where(.dark, .dark *)); */
 
 body {
     background-color: #fff;
@@ -8,6 +8,10 @@ body {
 
 @theme {
     
+}
+
+@utility active-mobile {
+    transform: translate(100%,0);
 }
 
 @layer components {
