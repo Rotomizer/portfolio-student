@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 /* @custom-variant dark (&:where(.dark, .dark *)); */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #fff;
@@ -12,6 +15,11 @@ body {
 
 @utility active-mobile {
     transform: translate(100%,0);
+    box-shadow: 0 0 40px 10px rgba(0,0,0,0.2);
+}
+
+@utility mobile-return {
+    right: 0;
 }
 
 @layer components {

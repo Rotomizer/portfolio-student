@@ -1,10 +1,9 @@
 //collect mobile menu div from the document
 const mobile = document.getElementById("mobileMenu");
 
-//function on click
 function mobileMenu () {
+    let scrollPosition = window.pageYOffset;
+
     mobile.classList.toggle('active-mobile');
+    mobile.classList.contains('active-mobile') ? window.onscroll = function() {window.scrollTo(0, scrollPosition)} : window.onscroll = null; 
 }
-//check if mobile menu is showing
-//if not, turn on (menu slides in from the side and fades in)
-//if showing, turn off (menu slides out and fades out)
