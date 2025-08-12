@@ -13,6 +13,11 @@ body {
     
 }
 
+@utility darkmode {
+    background-color: #000;
+    text-color: #fff;
+}
+
 @utility active-mobile {
     transform: translate(100%,0);
     box-shadow: 0 0 40px 10px rgba(0,0,0,0.2);
@@ -20,6 +25,12 @@ body {
 
 @utility mobile-return {
     right: 0;
+}
+
+@layer base {
+    :root {
+        
+    }
 }
 
 @layer components {
