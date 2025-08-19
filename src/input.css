@@ -10,6 +10,7 @@ body {
 }
 
 @theme {
+  --primary: #faab00;
 }
 
 @utility darkmode {
@@ -54,5 +55,8 @@ body {
 
   .card {
     @apply relative mx-5 h-80 min-w-1/4 snap-start rounded-3xl bg-[url(https://placehold.co/1920x1080)] bg-cover bg-center bg-no-repeat;
+  }
+  .calc-button {
+    @apply h-25 w-25 cursor-pointer rounded-full text-white shadow-[-8px_-8px_10px_rgba(255,255,255,0.1),8px_8px_10px_rgba(0,0,0,0.1)];
   }
 }

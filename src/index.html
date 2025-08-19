@@ -302,40 +302,77 @@
       </div>
     </section>
 
-    <section class="debug1 relative h-screen w-full p-20">
-      <div
-        class="grid h-full w-2/3 grid-flow-row grid-rows-6 rounded-3xl border border-black bg-gray-50 text-4xl"
+    <section class="relative h-screen w-full p-20">
+      <form
+        class="m-auto grid h-full w-1/2 grid-flow-row grid-rows-6 items-center justify-evenly gap-10 rounded-4xl bg-[#404068] p-10 text-4xl"
       >
-        <div
-          class="col-span-4 h-full w-full rounded-t-3xl border border-black text-right text-4xl"
-        >
-          <h2>[Output]</h2>
-        </div>
-        <button class="h-full w-full border border-black">C</button>
-        <button class="h-full w-full border border-black">( )</button>
-        <button class="h-full w-full border border-black">%</button>
-        <button class="h-full w-full border border-black">÷</button>
-        <button class="h-full w-full border border-black">7</button>
-        <button class="h-full w-full border border-black">8</button>
-        <button class="h-full w-full border border-black">9</button>
-        <button class="h-full w-full border border-black">x</button>
-        <button class="h-full w-full border border-black">4</button>
-        <button class="h-full w-full border border-black">5</button>
-        <button class="h-full w-full border border-black">6</button>
-        <button class="h-full w-full border border-black">-</button>
-        <button class="h-full w-full border border-black">1</button>
-        <button class="h-full w-full border border-black">2</button>
-        <button class="h-full w-full border border-black">3</button>
-        <button class="h-full w-full border border-black">+</button>
-        <button class="h-full w-full rounded-bl-3xl border border-black">
-          +/-
-        </button>
-        <button class="h-full w-full border border-black">0</button>
-        <button class="h-full w-full border border-black">.</button>
-        <button class="h-full w-full rounded-br-3xl border border-black">
-          =
-        </button>
-      </div>
+        <input
+          type="text"
+          name="display"
+          value="[Output]"
+          class="col-span-4 h-full w-full rounded-3xl text-right text-white"
+        />
+        <input
+          type="button"
+          value="C"
+          class="calc-button text-[var(--primary)]"
+        />
+        <input
+          type="button"
+          value="( )"
+          class="calc-button text-[var(--primary)]"
+        />
+        <input
+          type="button"
+          value="%"
+          class="calc-button text-[var(--primary)]"
+        />
+        <input
+          type="button"
+          value="÷"
+          class="calc-button text-[var(--primary)]"
+        />
+        <input type="button" value="7" class="calc-button" />
+        <input type="button" value="8" class="calc-button" />
+        <input type="button" value="9" class="calc-button" />
+        <input
+          type="button"
+          value="x"
+          class="calc-button text-[var(--primary)]"
+        />
+        <input type="button" value="4" class="calc-button" />
+        <input type="button" value="5" class="calc-button" />
+        <input type="button" value="6" class="calc-button" />
+        <input
+          type="button"
+          value="-"
+          class="calc-button text-[var(--primary)]"
+        />
+        <input type="button" value="1" class="calc-button" />
+        <input type="button" value="2" class="calc-button" />
+        <input type="button" value="3" class="calc-button" />
+        <input
+          type="button"
+          value="+"
+          class="calc-button text-[var(--primary)]"
+        />
+        <input
+          type="button"
+          value="+/-"
+          class="calc-button text-[var(--primary)]"
+        />
+        <input type="button" value="0" class="calc-button" />
+        <input
+          type="button"
+          value="."
+          class="calc-button text-[var(--primary)]"
+        />
+        <input
+          type="button"
+          value="="
+          class="calc-button text-[var(--primary)]"
+        />
+      </form>
     </section>
 
     <section class="pt-20">
